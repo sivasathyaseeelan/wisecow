@@ -1,5 +1,7 @@
 name: EKS Deploy
 
+permissions: {}
+
 on:
   workflow_run:
     workflows: ["Docker Build and Push"]
