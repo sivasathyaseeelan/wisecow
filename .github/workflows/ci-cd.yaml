@@ -75,4 +75,4 @@ jobs:
 
     - name: Apply Ingress Configuration
       run: |
-        kubectl apply -f ./mainfest/ingress.yaml
+        kubectl apply -f ./manifest/ingress.yaml
