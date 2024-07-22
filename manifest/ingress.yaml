@@ -9,7 +9,8 @@ spec:
   tls:
   - secretName: tls-secret
   rules:
-  - http:
+  - host: ab4cee4aa148440dc9f61bc8ce46bf27-238763611.ap-south-1.elb.amazonaws.com
+    http:
       paths:
       - path: /
         pathType: Prefix
