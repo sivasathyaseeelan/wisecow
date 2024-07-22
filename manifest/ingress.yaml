@@ -7,7 +7,9 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   tls:
-  - secretName: tls-secret
+  - hosts:
+      - ab4cee4aa148440dc9f61bc8ce46bf27-238763611.ap-south-1.elb.amazonaws.com
+    secretName: tls-secret
   rules:
   - host: ab4cee4aa148440dc9f61bc8ce46bf27-238763611.ap-south-1.elb.amazonaws.com
     http:
