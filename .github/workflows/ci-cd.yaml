@@ -63,3 +63,16 @@ jobs:
       run: |
         kubectl apply -f ./manifest/deployment.yaml
         kubectl apply -f ./manifest/service.yaml
+    
+    - name: Decode and create TLS secret
+      env:
+        TLS_CRT: ${{ secrets.TLS_CRT }}
+        TLS_KEY: ${{ secrets.TLS_KEY }}
+      run: |
+        echo $TLS_CRT | base64 --decode > tls.crt
+        echo $TLS_KEY | base64 --decode > tls.key
+        kubectl create secret tls tls-secret --cert=tls.crt --key=tls.key --dry-run=client -o yaml | kubectl apply -f -
+
+    - name: Apply Ingress Configuration
+      run: |
+        kubectl apply -f ./mainfest/ingress.yaml
