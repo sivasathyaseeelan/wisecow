@@ -12,4 +12,5 @@ Link - http://ab4cee4aa148440dc9f61bc8ce46bf27-238763611.ap-south-1.elb.amazonaw
 
 ![Screenshot from 2024-07-24 13-35-36](https://github.com/user-attachments/assets/a4c08b08-fc6f-4d13-a58e-317f12ae242c)
 
-![Screenshot from 2024-07-24 13-39-56](https://github.com/user-attachments/assets/c5f14ccb-79a5-4714-a894-410b06a4ce40)
+![Screenshot from 2024-07-24 13-42-55](https://github.com/user-attachments/assets/07924117-8ac5-4e41-b3d0-66f1a95c6cb8)
+
